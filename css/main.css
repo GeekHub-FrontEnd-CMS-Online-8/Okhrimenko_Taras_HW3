@@ -37,8 +37,10 @@ table {
 	margin-bottom: 40px;
 }
 .clasic {
-	all: unset;
+	font-weight: normal;
 	margin-bottom: 12px;
+	padding-right: 0px;
+    padding-left: 0px;
 }
 #form input[type='submit'] {
 	margin-top: 12px;
