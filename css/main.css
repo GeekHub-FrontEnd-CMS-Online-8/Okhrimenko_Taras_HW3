@@ -36,6 +36,10 @@ td {
 table {
 	margin-bottom: 40px;
 }
+.clasic {
+	all: unset;
+	margin-bottom: 12px;
+}
 #form input[type='submit'] {
 	margin-top: 12px;
 	margin-bottom: 12px;
@@ -70,11 +74,9 @@ table {
 }
 #table_1 {
 	width: 100%;
-	border: 1px solid black;
 }
 #table_2 {
 	width: 60%;
-	border: 1px solid black;
 }
 #table_2 td, 
 #table_2 th {
@@ -83,6 +85,11 @@ table {
 	#table_2 tr td:first-child {
 		font-weight: bold;
 	}
+
+#table_1, #table_1 th, #table_1 tr, #table_1 td,
+#table_2, #table_2 th, #table_2 tr, #table_2 td {
+	border: 1px solid black;
+}
 
 #table_3 {
 	width: 60%;
