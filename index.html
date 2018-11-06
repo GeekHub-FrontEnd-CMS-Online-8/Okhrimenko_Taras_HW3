@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="css/main.css"/>
+	<meta charset="utf-8">
+	<title>FrontEnd+CMS</title>
+</head>
+<body>
+	<article>
+		<h1>Home Work 3</h1>
+		<section id="form_sect">
+			<div class="heading">
+				<h3>Form</h3>
+			</div>
+			<form id="form" action="" method="post">
+				<fieldset id="about_person">
+					<legend>Коротко о себе</legend>
+					<label for="first_name">Имя: <input id="first_name" type="text" name="fr_name" required></label>
+					<label for="las_name">Фамилия: <input id="las_name" type="text" name="lt_name" required></label>
+					<p>Пол:
+						<input id="gender_man" type="radio" value="мужской" name="gender">
+						<label for="gender_man">мужской</label>
+						<input id="gender_wooman" type="radio" value="женский" name="gender">
+						<label for="gender_wooman">женский</label>
+					</p>
+					<label for="age">
+						Возраст: <input id="age" type="text" name="age" required> лет
+					</label>
+				</fieldset>
+				<fieldset id="more_info_person">
+					<legend>Подробнее о себе</legend>
+					<label for="student"><input id="student" type="radio" value="Студент" name="young"> Студент</label>
+					<label for="schoolboy"><input id="schoolboy" type="radio" value="Школьник" name="young"> Школьник</label>
+					<label for="birth"><input id="birth" type="text" name="birth_date"> Дата рождения</label>
+					<label for="institution"><input id="institution" type="text" name="institution"> Название учебного учереждения</label>
+					<label for="cours"><input id="cours" type="text" name="stud_cours"> Курс/Класс</label>
+					<p>Увлечения:</p>
+					<label><input type="checkbox" name="football" value="football"> Футбол</label>
+					<label><input type="checkbox" name="bicycle" value="bicycle"> Велоспорт</label>
+					<label><input type="checkbox" name="chess" value="chess"> Шахматы</label>
+					<label><input type="checkbox" name="swimming" value="swimming"> Плавание</label>
+					<label><input type="checkbox" name="basketball" value="basketball"> Баскетбол</label>
+					<p>Направление:</p>
+					<select>
+						<option selected disabled>Выберите тип</option>
+						<option value="Temporary training">Временные занятия</option>
+						<option value="Permanent training">Постоянные тренировки</option>
+						<option value="Coach Assistance">Помощь тренера</option>
+						<option value="Competition">Соревнования</option>
+					</select>
+					<p>Ваш опыт:</p>
+					<label for="0"><input id="0" type="radio" value="0" name="expiriance"> Без опыта</label>
+					<label for="1"><input id="1" type="radio" value="0-1" name="expiriance"> Занимаюсь до одного года</label>
+					<label for="2"><input id="2" type="radio" value="0-2" name="expiriance"> Занимаюсь до двух лет</label>
+					<label for="3"><input id="3" type="radio" value="2+" name="expiriance"> Более двух лет тренировок</label>
+					<p>Удобное место для тренировок:</p>
+					<select size="3">
+						<option value="Central hall">Центральный зал</option>
+						<option value="University hall">Зал при университете</option>
+						<option value="Main stadium">Главный стадион</option>
+					</select>
+					<p>Ваши пожелания:</p>
+					<div id="coment"><textarea placeholder="Введите ваши пожелания к тренировкам"></textarea></div>
+				</fieldset>
+				<fieldset id="final_formsect">
+					<legend>И в заключении</legend>
+					<label for="email">Email: <input id="email" type="email" name="email" required></label>
+					<label for="phone">Телефон: <input id="phone" type="text" name="phone" required></label>
+					<p>Разрешение на обработку личных данных</p>
+					<label><input type="checkbox" name="sub_formchek" required> Я согласен</label>
+				</fieldset>
+				<input type="submit" form="form" value="Отправить">
+			</form>
+		</section>
+		<section id="table_sect">
+			<div class="heading">
+				<h3>Tables</h3>
+			</div>
+			<table id="table_1">
+				<tr>
+					<th>Название цвета</th>
+					<th>HEX</th>
+					<th>RGB</th>
+				</tr>
+				<tr>
+					<td>IndianRed</td>
+					<td>#CD5C5C</td> 
+					<td>205, 92, 92</td>
+				</tr>
+				<tr>
+					<td>LimeGreen</td>
+					<td>#32CD32</td> 
+					<td>50, 205, 50</td>
+				</tr>
+				<tr>
+					<td>Yellow</td>
+					<td>#FFFF00</td> 
+					<td>255, 255, 0</td>
+				</tr>
+				<tr>
+					<td>DarkTurquoise</td>
+					<td>#00CED1</td> 
+					<td>0, 206, 209</td>
+				</tr>
+				<tr>
+					<td>Chocolate</td>
+					<td>#D2691E</td> 
+					<td>210, 105, 30</td>
+				</tr>
+			</table>
+			<table id="table_2">
+				<tr>
+					<th>Культура</th>
+					<th>Бур'яни</th>
+					<th>Норма витрати препарату, л/га</th>
+					<th>Строки обробки</th>
+				</tr>
+				<tr>
+					<td>Ріпак</td>
+					<td>однорічні</td> 
+					<td>2-3</td>
+					<td>1 обробка в фазі 2-4 листків н бурянів. При висоті бурянів 10-15 см</td>
+				</tr>
+				<tr>
+					<td>Томати</td>
+					<td rowspan="2">однорічні та багаторічні</td> 
+					<td>1-22-3</td>
+					<td rowspan="3">1 обробка в фазі 1-2 листків культури, висота бурянів 10-15 см</td>
+				</tr>
+				<tr>
+					<td>Огірки</td> 
+					<td>2-3</td>
+				</tr>
+				<tr>
+					<td>Коноплі</td>
+					<td>однорічні</td> 
+					<td>1.5</td>
+				</tr>
+			</table>
+			<table id="table_3">
+				<tr>
+					<th>Перечень специальностей и направлений подготовки</th>
+					<th>Образовательные программы на английском языке</th>
+					<th>Программа</th>
+				</tr>
+				<tr>
+					<td>Математика и механика</td>
+					<td>Mathematics; Mathematical Sciences; Applied Mathematics; Mathematics and Physics; Complex Systems Modelling; Geometry; Algebra; Geometry and Number Theory; Number Theory; Mathematics and Statistics;</td>
+					<td>Магистратура, Аспирантура</td>
+				</tr>
+				<tr>
+					<td>Компьютерные и информационные науки</td>
+					<td>Computer Science; Computer Science and Engineering Major; Information and Computer Engineering; Software Systems; Software Systems Engineering; Computer hardware and architecture; Information Systems; Management and Information Systems; Internet Technology; Information Security;</td>
+					<td>Магистратура, Аспирантура</td>
+				</tr>
+				<tr>
+					<td>Физико-технические науки и технологии</td>
+					<td>Physics; Physics and astronomy; Solid State Physics; Applied Physics; Condensed Matter Physics; Multi -scale Physics; Particle Physics; Particle Physics and Nuclear Physics; Theoretical Physics; Philosophy of Physics; Applied and Industrial Physics; Applied Physics and Applied Mathematics; Plasma Physics; Earth Physics; High Energy Physics; Experimental Physics; Physics: Biophysics and Medical Physics; </td>
+					<td>Аспирантура</td>
+				</tr>
+			</table>
+		</section>
+	</article>
+</body>
+</html>
